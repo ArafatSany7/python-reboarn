@@ -9,14 +9,16 @@ def showFunction():
 
 
 while True:
-    chocie = input(
-        "1.Add new Contact \n"
-        "2. Serach new contact\n"
-        "3. Display The Contact\n"
-        "4. Edit the contact \n"
-        "5. Delete the contact\n"
-        "6. Exit \n"
-        "Please write number between 1 to : "
+    chocie = int(
+        input(
+            "1.Add new Contact \n"
+            "2. Serach new contact\n"
+            "3. Display The Contact\n"
+            "4. Edit the contact \n"
+            "5. Delete the contact\n"
+            "6. Exit \n"
+            "Please write number between 1 to : "
+        )
     )
     if chocie == 1:
         name = input("Add your contact name : ")
@@ -35,3 +37,27 @@ while True:
             print("Contact book is empty")
         else:
             showFunction()
+
+    elif chocie == 4:
+        EditContact = input("Edit your contact: ")
+        if EditContact in Contact:
+            phonr = input("Change your numner")
+            Cotact[EditContact] = phone
+            print("Contact updated sussecfully")
+
+            showFunction()
+        else:
+            print("Name is not found")
+
+    elif chocie == 5:
+        DContact = input("Which Contact you want to delete")
+        if DContact in Contact:
+            DelConfirm = input("Sure?")
+            if DelConfirm == "y" or DelConfirm == "Y":
+                Contact.pop(DContact)
+                showFunction()
+        else:
+            print("Contact is not found")
+
+    else:
+        break
