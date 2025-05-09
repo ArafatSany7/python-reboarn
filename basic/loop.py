@@ -1,6 +1,6 @@
-count =1
-while count <= 5:
+count = 1
+while count <= 10:
     print("hello")
-    count +=1
+    count += 1
 
 print(count)
