@@ -16,4 +16,4 @@ index = ls(conact, find)
 if index != -1:
     print(f"contact found at index :{index}")
 else:
-    print("Index not found")
+    print("Index not found in array")
