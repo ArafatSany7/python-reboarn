@@ -1,6 +1,6 @@
 conact = ["Alice", "Bob", "Charlie", "David"]
 
-find = input("Enter name : ")
+find = input("Enter name you want to search: ")
 
 
 def ls(arr, key):
