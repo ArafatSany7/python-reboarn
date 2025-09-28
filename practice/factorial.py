@@ -2,7 +2,7 @@ num = int(input("Enter a number : "))
 facto = 1
 
 if num < 0:
-    print("Factorial does not exist for negetive number : ")
+    print("Factorial does not exists for negetive number : ")
 elif num == 0:
     print("Factorial of 0 is 1")
 else:
